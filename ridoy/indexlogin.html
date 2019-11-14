@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Transparent Login Form</title>
+  <link rel="stylesheet" href="stylelogin.css">
+</head>
+
+<body>
+  <div class="slideshow">
+    <img src="1st.jpg" id="slideimage">
+    <script>
+      var images = [
+
+        "1st.jpg",
+        "2nd.jpg",
+        "3rd.jpg",
+        "4th.jpg",
+        "5th.jpg"
+      ];
+      var i = 0;
+
+      function slides() {
+        document.getElementById("slideimage").src = images[i];
+        if (i < (images.length - 1))
+          i++;
+        else
+          i = 0;
+      }
+      setInterval(slides, 2000)
+    </script>
+  </div>
+  <div class="loginBox">
+    <h2>Log In Here</h2>
+    <form>
+      <p>Email</p>
+      <input type="text" name="" placeholder="Enter Email">
+      <p>Password</p>
+      <input type="password" name="" placeholder="••••••">
+      <input type="submit" name="" value="Sign In">
+      <a href="#">Forget Password</a><br />
+      <a href="http://localhost/joss/?date=02&month=JAN&year=2014&signup=SIGN+UP">Create Account</a>
+
+    </form>
+  </div>
+</body>
+
+</html>
